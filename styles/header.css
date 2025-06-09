@@ -1,0 +1,233 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: white;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 19px;
+    height: 56px;
+    width: 200px;
+    align-items: center;
+}
+
+.hamburger-button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: none;
+    transition: background-color 0.20s;
+    margin-right: 20px;
+}
+
+.hamburger-button:hover {
+    background-color: rgba(234, 234, 234, 0.904);
+}
+
+.hamburger-icon {
+    margin-top: 4px;
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+
+.youtube-logo {
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    height: 56px;
+    flex-direction: row;
+    align-items: center;
+    max-width: 680px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.search-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+.search-box {
+    flex: 1;
+    width: 0;
+    height: 35px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 15px;
+}
+
+.search-box::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  color: rgb(192, 192, 192);
+}
+
+.search-icon-button {
+    height: 39px;
+    width: 60px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-radius: 0px 40px 40px 0px;
+    padding-top: 4px;
+    margin-left: -2px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: filter 0.15s;
+    display: flex;
+}
+
+.search-icon-button,
+.voice-search-button,
+.notification-section {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon-button .tooltip,
+.voice-search-button .tooltip,
+.notification-section .tooltip {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.search-icon-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.notification-section:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon-button:hover {
+    filter: brightness(98%);
+}
+
+.voice-search {
+    margin-left: 7px;
+}
+
+.voice-search-button {
+    height: 39px;
+    width: 39px;
+    border-radius: 19.5px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.15s;
+}
+
+.voice-search-button:hover {
+    filter: brightness(95%);
+}
+
+.voice-search-button:active {
+    filter: brightness(85%);
+}
+
+.voice-search-icon {
+    margin-top: 2px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 260px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+.create-box-button {
+    height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.219);
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+
+.create-box-button:hover {
+    background-color: rgba(234, 234, 234, 0.904);
+}
+
+span {
+    font-size: 30px;
+    font-weight: 200;
+    margin-right: 10px;
+}
+
+.notification-section {
+    margin-top: 5px;
+}
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 20px;
+
+    color: #0660d4;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.219);
+    border: none;
+    background-color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.20s
+        box-shadow 0.20s;
+}
+
+.sign-in-button:hover {
+    background-color: rgb(222, 241, 255);
+    box-shadow: 0px 1px 3px rgba(6, 95, 212, 0.219);
+}
+
+.sign-in-icon {
+    margin-right: 8px;
+}
+
+

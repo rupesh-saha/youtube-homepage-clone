@@ -1,0 +1,150 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+@media (max-width: 975px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 976px) and (max-width: 1499px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1500px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.template {
+    position: relative;
+    cursor: pointer;
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 11px;
+    right: 7px;
+
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.channel {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.channel-icon {
+    cursor: pointer;
+}
+
+.template-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video-description {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 5px;
+}
+
+.video-heading {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+    line-height: 1.3;
+}
+
+.video-info {
+    font-size: 14px;
+}
+
+.channel-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.channel-name {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.verified-badge {
+  color: #ffffff; /* White checkmark */
+  background-color: #888888; /* Grey background */
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.channel-hover {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    white-space: nowrap;
+    background-color: white;
+    align-items: center;
+
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: -55px;
+    z-index: 20;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.15s ;
+}
+
+
+.channel-icon-hover {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.channel-name-hover {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+    line-height: 1.3;
+}
+
+.sub-count-hover {
+    font-size: 15px;
+}
+
+.channel:hover .channel-hover {
+    opacity: 1;
+}

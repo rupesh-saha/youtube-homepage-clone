@@ -1,0 +1,59 @@
+aside {
+    position: fixed;
+    bottom: 0px;
+    left: 2px;
+    top: 56px;
+    width: 70px;
+}
+
+.aside-element {
+    height: 75px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s
+        filter 0.15s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.aside-element:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.aside-element:active {
+    filter: brightness(85%);
+}
+
+.aside-element .title {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.aside-element .tooltip {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -5px;
+    right: -25px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.aside-element:hover .tooltip {
+    opacity: 1;
+}
